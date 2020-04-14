@@ -130,10 +130,6 @@ body {
 .site-slider-two:hover .slider-btn .next {
     opacity: 1;
 }
-.position-mid {
-    position: absolute;
-    top: 30%;
-}
 
 /*Slider three*/
 
