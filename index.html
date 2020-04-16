@@ -17,42 +17,45 @@
 
 <body>
     <!--Header-->
-    <div class="container mt-3">
-        <div class="row">
-            <div class="logo col-6 col-md-3 col-lg-2">
-                <img src="image/logo.jpeg" width="100%" height="100%">
-            </div>
-            <div class="search-container col-md-6 col-lg-7 d-none d-sm-block ">
-                <form class="searchbar">
-                    <input type="text" placeholder="Search..." name="search">
-                    <button onclick="Comingsoon()" type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <div class="addtocart col-6 col-sm-3 col-md-3 col-lg-3">
-                <form class="shopping-cart">
-                    <button onclick="Comingsoon()" type="button"><i class="fa fa-shopping-cart"></i></button>
-                    <label style="padding-top:10px;">Cart</label>
-                </form>
-            </div>
-            <div class="search-container col-sm-12 col-md-6 col-lg-7 d-md-none d-block">
-                <form class="searchbar">
-                    <input type="text" placeholder="Search..." name="search">
-                    <button onclick="Comingsoon()" type="submit"><i class="fa fa-search"></i></button>
-                </form>
+    <section class="header">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="logo col-6 col-md-3 col-lg-2 px-0">
+                    <img src="image/logo.jpeg" width="80%" height="100%" style="float: left;">
+                </div>
+                <div class="search-container col-md-6 col-lg-7 d-none d-sm-block">
+                    <form class="searchbar">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button onclick="Comingsoon()" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="addtocart col-6 col-sm-3 col-md-3 col-lg-3 px-0">
+                    <form class="shopping-cart">
+                        <button onclick="Comingsoon()" type="button"><i class="fa fa-shopping-cart"></i></button>
+                        <label style="padding-top:10px;">Cart</label>
+                    </form>
+                </div>
+                <div class="search-container2 col-sm-12 col-md-6 col-lg-7 d-md-none d-block px-0">
+                    <form class="searchbar">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button onclick="Comingsoon()" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
 
     <!--Navigation bar-->
-    <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #6983aa;">
+    <div class="container mt-3 mt-md-3 mt-xl-3" style="background-color: #6983aa;">
+        <nav class="navbar navbar-expand-sm navbar-dark py-xl-2">
             <button style="background-color: rgba(0, 132, 255, 0.788);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home page</a>
+                        <a class="nav-link" href="index.html">Home page</a>
                     </li>
                     <li class="nav-item active" style="margin-left: 50px;">
                         <a class="nav-link" href="#">About us</a>
@@ -71,7 +74,7 @@
                         <a class="nav-link" href="#">News</a>
                     </li>
                     <li class="nav-item active" style="margin-left: 50px;">
-                        <a class="nav-link" href="#">Contact us</a>
+                        <a class="nav-link" href="Contact-us/contact-us.html">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -79,16 +82,16 @@
     </div>
 
     <!--Sidebar and slider one-->
-    <div class="container">
-        <div class="row">
+    <div class="container mt-3 mt-md-0">
+        <div class="row ">
             <!--Sidebar-->
-            <div class="col-lg-3">
-                <nav class="navbar navbar-expand-sm navbar-dark flex-lg-column" style="background-color: #6983aa ; align-items: unset;">
+            <div class="col-lg-3 pr-xl-0" style="background-color:#6983aa;">
+                <nav class="navbar navbar-expand-sm navbar-dark flex-md-column flex-lg-column" style="align-items: unset;">
                     <p style="font-size: 20px; color: white;">Avaliable brands</p>
-                    <button style="background-color: rgba(0, 132, 255, 0.788);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <button style="background-color: rgba(0, 132, 255, 0.788);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId2" aria-controls="collapsibleNavId2" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span> 
                     </button>
-                    <div class="collapse navbar-collapse navbar-dark" id="collapsibleNavId">
+                    <div class="collapse navbar-collapse navbar-dark" id="collapsibleNavId2">
                         <ul class="navbar-nav flex-lg-column">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Tango Company</a>
@@ -110,9 +113,9 @@
                 </nav>
             </div>
             <!--Slider one-->
-            <div class="col-lg-9">
+            <div class="col-lg-9 ml-xl-0 px-0">
                 <div class="site-slider">
-                    <div class="slider-one">
+                    <div class="slider-one px-0">
                         <img src="image/Carousel/carousel6.jpg" class="img-fluid" alt="">
                         <img src="image/Carousel/carousel7.jpg" class="img-fluid" alt="">
                         <img src="image/Carousel/carousel4.jpg" class="img-fluid" alt="">
@@ -131,51 +134,51 @@
     </div>
 
     <!--Body area-->
-    <div class="container">
-        <div class="body-area">
-            <div class="tittle mt-5 p-1" style="background-color: #2196F3; color: white;">
-                <h4>Office chairs</h4>
-            </div>
-            <!--Slider two-->
+    <section class="body-area">
+        <div id="row-tittle" class="container">
+            <h4>Office chairs</h4>
+        </div>
+        <!--Slider two-->
+        <div class="container">
             <div class="site-slider-two px-md-4">
                 <div class="row slider-two text-center">
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Christopher Guy/Office chair/amy-recliner.jpg" alt="Product 1">
                         <span class="border site-btn btn-span">BOSS TRADITIONAL</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Christopher Guy/Office chair/bergen.jpg" alt="Product 2">
                         <span class="border site-btn btn-span">BERGEN</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Italiano Vintage/Office chair/Bonded-Leather.jpg" alt="Product 3">
                         <span class="border site-btn btn-span">BONDED LEATHER</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Italiano Vintage/Office chair/Boss-Traditional.jpg" alt="Product 4">
                         <span class="border site-btn btn-span">HIGH RACING</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5">
                         <span class="border site-btn btn-span">OFFICE STAR</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6">
                         <span class="border site-btn btn-span">PROFORM</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/The Platform/Office chair/High-Racing.jpg" alt="Product 7">
                         <span class="border site-btn btn-span">AMY-RECLINER</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/The Platform/Office chair/Office-Star.jpg" alt="Product 8">
                         <span class="border site-btn btn-span">ESSENTIALS BLACK</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/VinFurniture/Office chair/proform.jpg" alt="Product 9">
                         <span class="border site-btn btn-span">EXECUTIVE OFFICE</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/VinFurniture/Office chair/White-Deluxe.jpg" alt="Product 10">
                         <span class="border site-btn btn-span">WHITE DELUXE</span>
                     </div>
@@ -189,50 +192,52 @@
                     </span>
                 </div>
             </div>
+        </div>
 
-            <div class="tittle mt-5 p-1" style="background-color: #2196F3; color: white;">
-                <h4>Tango Company's products</h4>
-            </div>
-            <!--Slider three-->
+        <div id="row-tittle" class="container">
+            <h4>Tango Company's products</h4>
+        </div>
+        <!--Slider three-->
+        <div class="container">
             <div class="site-slider-three px-md-4">
                 <div class="row slider-three text-center">
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Dining chair/Lotusville-Vintage.jpg" alt="Product 1">
                         <span class="border site-btn btn-span">LOTUSVILLE-VINTAGE</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Dining chair/Mountfair-Modern.jpg" alt="Product 2">
                         <span class="border site-btn btn-span">MOUNTFAIR MODERN</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Glider chair/Kempten-Casual.jpg" alt="Product 3">
                         <span class="border site-btn btn-span">KEMPTEN CASUAL</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Glider chair/Madison-Park.jpg" alt="Product 4">
                         <span class="border site-btn btn-span">MADISON PARK</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5">
                         <span class="border site-btn btn-span">ESSENTIALS BLACK</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6">
                         <span class="border site-btn btn-span">EXECUTIVE OFFICE</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Rocking chair/Irvin-Birch.jpg" alt="Product 7">
                         <span class="border site-btn btn-span">IRVIN BIRCH</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Rocking chair/Kloris-Tobacco.jpg" alt="Product 8">
                         <span class="border site-btn btn-span">KLORIS TOBACCO</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Sofa/monti.jpg" alt="Product 9">
                         <span class="border site-btn btn-span">MONTI</span>
                     </div>
-                    <div class="col-md-2 product pt-md-5 pt-4">
+                    <div class="col-md-2 product pt-md-4 pt-4">
                         <img src="image/Tango Company/Sofa/sellarius-long.jpg" alt="Product 10">
                         <span class="border site-btn btn-span">SELLARIUS LONG</span>
                     </div>
@@ -247,73 +252,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--Footer-->
     <section id="footer">
         <div class="container">
-            <div class="row">
-                <div class="column-one col-md-4">
-                    <h6>INFORMATION & OUR SERVICES</h6>
-                    <ul>
-                        <li>
-                            <a href="#">RichField Chairs</a>
-                        </li>
-                        <li>
-                            <a href="#">Delivery in 24 hours</a>
-                        </li>
-                        <li>
-                            <a href="#">Free shipping</a>
-                        </li>
-                        <li>
-                            <a href="#">Our Guarantee</a>
-                        </li>
-                        <li>
-                            <a href="#">Email Preferences</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column-two col-md-4">
-                    <h6>LET US HELP</h6>
-                    <ul>
-                        <li>
-                            <a href="#">Help Center</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Customer Care</a>
-                        </li>
-                        <li>
-                            <a href="#">Return Policy</a>
-                        </li>
-                        <li>
-                            <a href="#">Interational Help</a>
-                        </li>
-                        <li>
-                            <a href="#">Accessibility</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column-three col-md-4">
-                    <h6>MORE WAYS TO SHOP</h6>
-                    <ul>
-                        <li>
-                            <a href="#">Tips & Ideas</a>
-                        </li>
-                        <li>
-                            <a href="#">Coupons</a>
-                        </li>
-                        <li>
-                            <a href="#">Deals</a>
-                        </li>
-                        <li>
-                            <a href="#">Clearance</a>
-                        </li>
-                        <li>
-                            <a href="#">New Arrivals</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <p>RICHFILED CHAIRS</p>
         </div>
     </section>
     <!--JavaScript-->
