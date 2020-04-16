@@ -18,13 +18,13 @@
 
 <body>
     <!--Header-->
-    <section class="header">
-        <div class="container mt-3">
+    <div class="container">
+        <section class="header mt-3">
             <div class="row">
                 <div class="logo col-6 col-md-3 col-lg-2 px-0">
-                    <img src="../image/logo.jpeg" width="80%" height="100%" style="float: left;">
+                    <img src="../images/logo.jpeg" width="80%" height="100%" style="float: left;">
                 </div>
-                <div class="search-container col-md-6 col-lg-7 d-none d-sm-block">
+                <div class="search-container col-6 col-lg-7 d-none d-sm-block">
                     <form class="searchbar">
                         <input type="text" placeholder="Search..." name="search">
                         <button onclick="Comingsoon()" type="submit"><i class="fa fa-search"></i></button>
@@ -43,95 +43,93 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--Navigation bar-->
-    <div class="container mt-3 mt-md-3 mt-xl-3" style="background-color: #6983aa;">
-        <nav class="navbar navbar-expand-sm navbar-dark py-xl-2">
-            <button style="background-color: rgba(0, 132, 255, 0.788);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <!--Navigation bar-->
+        <div class="row mt-3" style="background-color: #6983aa;">
+            <nav class="navbar navbar-expand-sm navbar-dark col-12 py-xl-2 ">
+                <button style="background-color: rgba(0, 132, 255, 0.788);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home page</a>
-                    </li>
-                    <li class="nav-item active" style="margin-left: 50px;">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item dropdown active" style="margin-left: 50px;">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Available furniture</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Office chairs</a>
-                            <a class="dropdown-item" href="#">Dinner chairs</a>
-                            <a class="dropdown-item" href="#">Rocking chairs</a>
-                            <a class="dropdown-item" href="#">Glider chairs</a>
-                            <a class="dropdown-item" href="#">Sofa</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active" style="margin-left: 50px;">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item active" style="margin-left: 50px;">
-                        <a class="nav-link" href="Contact-us/contact-us.html">Contact us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home page</a>
+                        </li>
+                        <li class="nav-item active" style="margin-left: 50px;">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item dropdown active" style="margin-left: 50px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Available furniture</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Office chairs</a>
+                                <a class="dropdown-item" href="#">Dinner chairs</a>
+                                <a class="dropdown-item" href="#">Rocking chairs</a>
+                                <a class="dropdown-item" href="#">Glider chairs</a>
+                                <a class="dropdown-item" href="#">Sofa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active" style="margin-left: 50px;">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item active" style="margin-left: 50px;">
+                            <a class="nav-link" href="Contact-us/contact-us.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-    <!--Showrooms-->
-    <div class="container">
-        <div class="row pt-md-3 pt-3">
-            <div class="showroom col-md-6">
+        <!--Showrooms-->
+        <div class="row pt-3">
+            <div class="showroom col-12 col-lg-6">
                 <h6 style="vertical-align: middle;">SHOWROOM NGUYEN THI MINH KHAI</h6>
                 <p>
                     Address: 264A - 264B - 264C Nguyen Thi Minh Khai, Ward 6, District 3, Ho Chi Minh City, Vietnam. Hotline: 18006867 - 02873016867 Open time: 08h00 - 21h30
                 </p>
             </div>
-            <div class="mapouter col-md-6">
+            <div class="mapouter col-12 col-lg-6">
                 <div class="gmap_canvas"><iframe width="100%" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?ll=10.773922,106.6894049&q=264A Nguyễn Thị Minh Khai&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <a href="https://techwithlove.com/"></a>
                 </div>
             </div>
         </div>
 
-        <div class="row pt-md-3 pt-3">
-            <div class="showroom col-md-6">
+        <div class="row pt-3">
+            <div class="showroom col-12 col-lg-6">
                 <h6 style="vertical-align: middle;">SHOWROOM PHU LOI</h6>
                 <p>
                     Address: 408 Binh Duong Highway, Ward Phu Loi, Thu Dau Mot City, Vietnam. Hotline: 18006867 - 02873016867 Open time: 08h00 - 21h30
                 </p>
             </div>
-            <div class="mapouter col-md-6">
+            <div class="mapouter col-12 col-lg-6">
                 <div class="gmap_canvas"><iframe width="100%" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?ll=10.9864469,106.6655436&q=408 Đại lộ Bình Dương&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <a href="https://techwithlove.com/"></a>
                 </div>
             </div>
         </div>
 
-        <div class="row pt-md-3 pt-3">
-            <div class="showroom col-md-6">
+        <div class="row pt-3">
+            <div class="showroom col-12 col-lg-6">
                 <h6 style="vertical-align: middle;">SHOWROOM NGUYEN OANH</h6>
                 <p>
                     Address: 2A Nguyen Oanh, Ward 7, District Go Vap, Ho Chi Minh City, Vietnam. Hotline: 18006867 - 02873016867 Open time: 08h00 - 21h30
                 </p>
             </div>
-            <div class="mapouter col-md-6">
+            <div class="mapouter col-12 col-lg-6">
                 <div class="gmap_canvas"><iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?ll=10.8304687,106.6782603&q=2a Nguyễn Oanh&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <a href="https://techwithlove.com/"></a>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--Footer-->
-    <section id="footer">
-        <div class="container">
-            <p>RICHFILED CHAIRS</p>
-        </div>
-    </section>
+        <!--Footer-->
+        <section id="footer" class="row">
+            <div class="col-12">
+                <p>RICHFILED CHAIRS</p>
+            </div>
+        </section>
+    </div>
     <!--JavaScript-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

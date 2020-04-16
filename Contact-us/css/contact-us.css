@@ -12,6 +12,7 @@
     height: 300px;
     width: 100%;
 }
+
 .gmap_canvas {
     overflow: hidden;
     background: none!important;
