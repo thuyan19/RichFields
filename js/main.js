@@ -24,7 +24,7 @@ $(".slider-two")
         responsive: [{
             breakpoint: 480,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 2
             }
         }]
     })
@@ -41,7 +41,7 @@ $(".slider-three")
         responsive: [{
             breakpoint: 480,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 2
             }
         }]
     })

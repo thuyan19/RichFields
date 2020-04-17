@@ -19,29 +19,28 @@
 <body>
     <!--Header-->
     <div class="container">
-        <section class="header mt-3">
-            <div class="row">
-                <div class="logo col-6 col-md-3 col-lg-2 px-0">
-                    <img src="../images/logo.jpeg" width="80%" height="100%" style="float: left;">
-                </div>
-                <div class="search-container col-6 col-lg-7 d-none d-sm-block">
-                    <form class="searchbar">
-                        <input type="text" placeholder="Search..." name="search">
-                        <button onclick="Comingsoon()" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="addtocart col-6 col-sm-3 col-md-3 col-lg-3 px-0">
-                    <form class="shopping-cart">
-                        <button onclick="Comingsoon()" type="button"><i class="fa fa-shopping-cart"></i></button>
-                        <label style="padding-top:10px;">Cart</label>
-                    </form>
-                </div>
-                <div class="search-container2 col-sm-12 col-md-6 col-lg-7 d-md-none d-block px-0">
-                    <form class="searchbar">
-                        <input type="text" placeholder="Search..." name="search">
-                        <button onclick="Comingsoon()" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
+        <section class="header mt-3 row">
+            <div class="logo col-2 px-0 d-none d-md-block">
+                <img src="../images/logo.png" width="80%" height="100%" style="float: left;">
+            </div>
+            <div class="logo col-2 px-0 d-block d-md-none">
+                <img src="../images/logo-mobile.png" width="50%" height="85%" style="float: left;">
+            </div>
+            <div class="search-container col-7 col-md-8 px-0 pt-md-5">
+                <form class="searchbar">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button onclick="Comingsoon()" type="submit">
+                            <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="addtocart col-3 col-md-2 px-0 pt-md-5">
+                <form class="shopping-cart">
+                    <button onclick="Comingsoon()" type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                     </button>
+                    <label>Cart</label>
+                </form>
             </div>
         </section>
 

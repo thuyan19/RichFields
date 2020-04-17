@@ -12,7 +12,8 @@
     <!--Slick Slider-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!--Custom CSS-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/Product-page.css">
 </head>
 
 <body>
@@ -20,10 +21,10 @@
     <div class="container">
         <section class="header mt-3 row">
             <div class="logo col-2 px-0 d-none d-md-block">
-                <img src="images/logo.png" width="80%" height="100%" style="float: left;">
+                <img src="../images/logo.png" width="80%" height="100%" style="float: left;">
             </div>
             <div class="logo col-2 px-0 d-block d-md-none">
-                <img src="images/logo-mobile.png" width="50%" height="85%" style="float: left;">
+                <img src="../images/logo-mobile.png" width="50%" height="85%" style="float: left;">
             </div>
             <div class="search-container col-7 col-md-8 px-0 pt-md-5">
                 <form class="searchbar">
@@ -52,7 +53,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home page</a>
+                            <a class="nav-link" href="../index.html">Home page</a>
                         </li>
                         <li class="nav-item active" style="margin-left: 50px;">
                             <a class="nav-link" href="#">About us</a>
@@ -71,61 +72,41 @@
                             <a class="nav-link" href="#">News</a>
                         </li>
                         <li class="nav-item active" style="margin-left: 50px;">
-                            <a class="nav-link" href="Contact-us/contact-us.html">Contact us</a>
+                            <a class="nav-link" href="../Contact-us/contact-us.html">Contact us</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
 
-        <!--Sidebar and slider one-->
-        <div class="row">
-            <!--Sidebar-->
-            <div class="col-12 col-lg-3" style="background-color: #6983aa;">
-                <nav class="navbar navbar-expand-sm navbar-dark flex-md-column flex-lg-column" style="align-items: unset;">
-                    <p style="font-size: 20px; color: white;">Avaliable brands</p>
-                    <button style="background-color: rgba(0, 132, 255, 0.788);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId2" aria-controls="collapsibleNavId2" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse navbar-dark" id="collapsibleNavId2">
-                        <ul class="navbar-nav flex-lg-column">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Tango Company</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">The Platform</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Christopher Guy</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Italiano Vintage</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">VinFurniture</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+        <!--Choosed Product-->
+        <div class="row mt-3 px-3">
+
+            <!--Product Image-->
+            <div class="col-12 col-xl-6">
+                <img src="../images/Christopher Guy/Dining chair/Baron-Fabric.jpg" width="100%" height="100%">
             </div>
 
-            <!--Slider one-->
-            <div class="col-12 col-lg-9 px-0">
-                <div class="site-slider">
-                    <div class="slider-one">
-                        <img src="images/Carousel/carousel6.jpg" class="img-fluid" alt="" />
-                        <img src="images/Carousel/carousel7.jpg" class="img-fluid" alt="" />
-                        <img src="images/Carousel/carousel4.jpg" class="img-fluid" alt="" />
-                    </div>
-                    <div class="slider-btn">
-                        <span class="prev position-top">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="next position-top right-0">
-                            <i class="fas fa-chevron-right"></i>
-                        </span>
-                    </div>
-                </div>
+            <!--Product Information-->
+            <div class="col-12 col-xl-6">
+                <h2>Baron White Vinyl Upholstery and Wood Frame Dining Chairs</h2>
+                <p>Product from <a href="#">Christopher Guy</a></p>
+                <h1>Today $299.99</h1>
+                <p>Pay it off in up to 24 months with the Overstock Store Credit Card.</p>
+                <h5>Features</h5>
+                <ul>
+                    <li>Counter Stool Weight Capacity: 500 lbs.</li>
+                    <li>Elegant Modern Counter Stool.</li>
+                    <li>Dense Foam Padding for Comfort.</li>
+                    <li>Polished Nailhead Trim.</li>
+                    <li>Solid Rubberwood Legs.</li>
+                    <li>Non-Marking Foot Caps.</li>
+                    <li>Soft Polyester Fabric Upholstery.</li>
+                    <li>Assembly Required.</li>
+                    <li>Two - Baron Counter Stool.</li>
+                </ul>
+                <button type="button" id="addtocart-btn" class="btn btn-primary btn-lg" onclick="Comingsoon()">Add to Cart</button>
+                <button type="button" id="favorites-btn" class="btn btn-light btn-lg" onclick="Comingsoon()">Favorites</button>
             </div>
         </div>
 
@@ -141,63 +122,63 @@
             <div class="site-slider-two px-md-4">
                 <div class="row slider-two text-center">
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Christopher Guy/Office chair/amy-recliner.jpg" alt="Product 1" />
+                        <a href="Product-page.html">
+                            <img src="../images/Christopher Guy/Office chair/amy-recliner.jpg" alt="Product 1" />
                             <span class="border site-btn btn-span">BOSS TRADITIONAL</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Christopher Guy/Office chair/bergen.jpg" alt="Product 2" />
+                        <a href="Product-page.html">
+                            <img src="../images/Christopher Guy/Office chair/bergen.jpg" alt="Product 2" />
                             <span class="border site-btn btn-span">BERGEN</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Italiano Vintage/Office chair/Bonded-Leather.jpg" alt="Product 3" />
+                        <a href="Product-page.html">
+                            <img src="../images/Italiano Vintage/Office chair/Bonded-Leather.jpg" alt="Product 3" />
                             <span class="border site-btn btn-span">BONDED LEATHER</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Italiano Vintage/Office chair/Boss-Traditional.jpg" alt="Product 4" />
+                        <a href="Product-page.html">
+                            <img src="../images/Italiano Vintage/Office chair/Boss-Traditional.jpg" alt="Product 4" />
                             <span class="border site-btn btn-span">HIGH RACING</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5" />
                             <span class="border site-btn btn-span">OFFICE STAR</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6" />
                             <span class="border site-btn btn-span">PROFORM</span>
                         </a>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/The Platform/Office chair/High-Racing.jpg" alt="Product 7" />
+                        <a href="Product-page.html">
+                            <img src="../images/The Platform/Office chair/High-Racing.jpg" alt="Product 7" />
                             <span class="border site-btn btn-span">AMY-RECLINER</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/The Platform/Office chair/Office-Star.jpg" alt="Product 8" />
+                        <a href="Product-page.html">
+                            <img src="../images/The Platform/Office chair/Office-Star.jpg" alt="Product 8" />
                             <span class="border site-btn btn-span">ESSENTIALS BLACK</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/VinFurniture/Office chair/proform.jpg" alt="Product 9" />
+                        <a href="Product-page.html">
+                            <img src="../images/VinFurniture/Office chair/proform.jpg" alt="Product 9" />
                             <span class="border site-btn btn-span">EXECUTIVE OFFICE</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/VinFurniture/Office chair/White-Deluxe.jpg" alt="Product 10" />
+                        <a href="Product-page.html">
+                            <img src="../images/VinFurniture/Office chair/White-Deluxe.jpg" alt="Product 10" />
                             <span class="border site-btn btn-span">WHITE DELUXE</span>
                         </a>
                     </div>
@@ -222,63 +203,63 @@
             <div class="site-slider-three px-md-4">
                 <div class="row slider-three text-center">
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Dining chair/Lotusville-Vintage.jpg" alt="Product 1" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Dining chair/Lotusville-Vintage.jpg" alt="Product 1" />
                             <span class="border site-btn btn-span">LOTUSVILLE-VINTAGE</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Dining chair/Mountfair-Modern.jpg" alt="Product 2" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Dining chair/Mountfair-Modern.jpg" alt="Product 2" />
                             <span class="border site-btn btn-span">MOUNTFAIR MODERN</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Glider chair/Kempten-Casual.jpg" alt="Product 3" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Glider chair/Kempten-Casual.jpg" alt="Product 3" />
                             <span class="border site-btn btn-span">KEMPTEN CASUAL</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Glider chair/Madison-Park.jpg" alt="Product 4" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Glider chair/Madison-Park.jpg" alt="Product 4" />
                             <span class="border site-btn btn-span">MADISON PARK</span>
                         </a>
                     </div>
-                    <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5" />
+                    <div class="col-md-2 product pt-4">
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5" />
                             <span class="border site-btn btn-span">ESSENTIALS BLACK</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6" />
                             <span class="border site-btn btn-span">EXECUTIVE OFFICE</span>
                         </a>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Rocking chair/Irvin-Birch.jpg" alt="Product 7" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Rocking chair/Irvin-Birch.jpg" alt="Product 7" />
                             <span class="border site-btn btn-span">IRVIN BIRCH</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Rocking chair/Kloris-Tobacco.jpg" alt="Product 8" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Rocking chair/Kloris-Tobacco.jpg" alt="Product 8" />
                             <span class="border site-btn btn-span">KLORIS TOBACCO</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Sofa/monti.jpg" alt="Product 9" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Sofa/monti.jpg" alt="Product 9" />
                             <span class="border site-btn btn-span">MONTI</span>
                         </a>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Sofa/sellarius-long.jpg" alt="Product 10" />
+                        <a href="Product-page.html">
+                            <img src="../images/Tango Company/Sofa/sellarius-long.jpg" alt="Product 10" />
                             <span class="border site-btn btn-span">SELLARIUS LONG</span>
                         </a>
                     </div>
@@ -307,7 +288,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
 </body>
 
 </html>
