@@ -1,0 +1,12 @@
+.card a .card-footer{
+    text-decoration: none;
+}
+
+.card-title{
+    color: #AE0000;
+}
+
+.card-footer{
+    text-align: center;
+    text-decoration: none;
+}
