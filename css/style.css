@@ -54,12 +54,28 @@ body {
     background-color: #6983aa;
 }
 
+/*Breadcrumb*/
+.breadcrumb{
+    background-color: white;
+
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
 /*Slider one*/
 
 .site-slider {
     position: relative;
 }
 
+.slider-one {
+    position: relative;
+}
+
+.slider-one p{
+    top: 80%;
+}
 .position-top {
     position: absolute;
     top: 50%;
@@ -90,7 +106,7 @@ body {
 .slick-dots {
     position: absolute;
     bottom: 0;
-    right: 50%;
+    right: 45%;
     display: flex;
     justify-content: center;
     margin: 0;
