@@ -21,12 +21,26 @@ $(".slider-two")
         slidesToScroll: 3,
         autoplay: true,
         autoplaySpeed: 3000,
-        responsive: [{
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 2
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 4
+                }
             }
-        }]
+        ]
     })
 
 /*Third slider*/
@@ -38,10 +52,24 @@ $(".slider-three")
         slidesToScroll: 3,
         autoplay: true,
         autoplaySpeed: 3000,
-        responsive: [{
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 2
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 4
+                }
             }
-        }]
+        ]
     })

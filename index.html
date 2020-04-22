@@ -19,17 +19,21 @@
     <!--Header-->
     <div class="container">
         <section class="header mt-3 row">
-            <div class="logo col-2 px-0 d-none d-md-block">
-                <img src="images/logo.png" width="80%" height="100%" style="float: left;">
+            <div class="logo col-3 col-xl-2 px-0 d-none d-md-block">
+                <img src="images/logo.png" width="140px" height="140px" style="float: left;">
             </div>
             <div class="logo col-2 px-0 d-block d-md-none">
-                <img src="images/logo-mobile.png" width="50%" height="85%" style="float: left;">
+                <img src="images/logo-mobile.png" width="40px" height="35px" style="float: left;">
             </div>
-            <div class="search-container col-7 col-md-8 px-0 pt-md-5">
+            <div class="search-container col-5 col-md-6 col-xl-7 px-0 pt-md-5">
                 <form class="searchbar">
                     <input type="text" placeholder="Search..." name="search">
+                </form>
+            </div>
+            <div class="search-container col-2 col-md-1 px-0 pt-md-5">
+                <form class="searchbar">
                     <button onclick="Comingsoon()" type="submit">
-                            <i class="fa fa-search"></i>
+                    <i class="fa fa-search"></i>
                     </button>
                 </form>
             </div>
@@ -50,21 +54,18 @@
                          <span class="navbar-toggler-icon"></span>
                     </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home page</a>
-                        </li>
-                        <li class="nav-item active" style="margin-left: 50px;">
-                            <a class="nav-link" href="#">About us</a>
                         </li>
                         <li class="nav-item dropdown active" style="margin-left: 50px;">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Available furniture</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
                                 <a class="dropdown-item" href="Category/Chair type/Officechair-listpage.html">Office chairs</a>
-                                <a class="dropdown-item" href="Category/Chair type/Officechair-listpage.html">Dinner chairs</a>
-                                <a class="dropdown-item" href="Category/Chair type/Officechair-listpage.html">Rocking chairs</a>
-                                <a class="dropdown-item" href="Category/Chair type/Officechair-listpage.html">Glider chairs</a>
-                                <a class="dropdown-item" href="Category/Chair type/Officechair-listpage.html">Sofa</a>
+                                <a class="dropdown-item" href="Category/Chair type/Dinnerchair-listpage.html">Dinner chairs</a>
+                                <a class="dropdown-item" href="Category/Chair type/Rockingchair-listpage.html">Rocking chairs</a>
+                                <a class="dropdown-item" href="Category/Chair type/Gliderchair-listpage.html">Glider chairs</a>
+                                <a class="dropdown-item" href="Category/Chair type/Sofa-listpage.html">Sofa</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown active" style="margin-left: 50px;">
@@ -78,9 +79,6 @@
                             </div>
                         </li>
                         <li class="nav-item active" style="margin-left: 50px;">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item active" style="margin-left: 50px;">
                             <a class="nav-link" href="Contact-us/contact-us.html">Contact us</a>
                         </li>
                     </ul>
@@ -88,9 +86,9 @@
             </nav>
         </div>
 
-        <!--Sidebar and slider one-->
+        <!--slider one-->
         <div class="row">
-    
+
             <!--Slider one-->
             <div class="col-12 px-0">
                 <div class="site-slider">
@@ -113,74 +111,125 @@
 
         <!--Body area-->
         <section class="body-area">
+        
+            <!--Slider two-->
             <div class="row">
                 <div id="row-tittle" class="col-12">
                     <h4>Office chairs</h4>
                 </div>
             </div>
 
-            <!--Slider two-->
-            <div class="site-slider-two px-md-4">
+            <div class="site-slider-two px-0">
                 <div class="row slider-two text-center">
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Christopher Guy/Office chair/amy-recliner.jpg" alt="Product 1" />
-                            <span class="border site-btn btn-span">BOSS TRADITIONAL</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Christopher Guy/Office chair/amy-recliner.jpg" alt="Product 1" />
+                                <div class="card-footer">
+                                    <p class="card-title">AMY RECLINER</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Christopher Guy/Office chair/bergen.jpg" alt="Product 2" />
-                            <span class="border site-btn btn-span">BERGEN</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Christopher Guy/Office chair/bergen.jpg" alt="Product 2" />
+                                <div class="card-footer">
+                                    <p class="card-title">BERGEN</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Italiano Vintage/Office chair/Bonded-Leather.jpg" alt="Product 3" />
-                            <span class="border site-btn btn-span">BONDED LEATHER</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Italiano Vintage/Office chair/Bonded-Leather.jpg" alt="Product 3" />
+                                <div class="card-footer">
+                                    <p class="card-title">BONDED LEATHER</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Italiano Vintage/Office chair/Boss-Traditional.jpg" alt="Product 4" />
-                            <span class="border site-btn btn-span">HIGH RACING</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Italiano Vintage/Office chair/Boss-Traditional.jpg" alt="Product 4" />
+                                <div class="card-footer">
+                                    <p class="card-title">BOSS TRADITIONAL</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5" />
-                            <span class="border site-btn btn-span">OFFICE STAR</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5" />
+                                <div class="card-footer">
+                                    <p class="card-title">ESSENTIALS BLACK</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6" />
-                            <span class="border site-btn btn-span">PROFORM</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6" />
+                                <div class="card-footer">
+                                    <p class="card-title">EXECUTIVE OFFICE</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/The Platform/Office chair/High-Racing.jpg" alt="Product 7" />
-                            <span class="border site-btn btn-span">AMY-RECLINER</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/The Platform/Office chair/High-Racing.jpg" alt="Product 7" />
+                                <div class="card-footer">
+                                    <p class="card-title">HIGH RACING</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/The Platform/Office chair/Office-Star.jpg" alt="Product 8" />
-                            <span class="border site-btn btn-span">ESSENTIALS BLACK</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/The Platform/Office chair/Office-Star.jpg" alt="Product 8" />
+                                <div class="card-footer">
+                                    <p class="card-title">OFFICE STAR</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/VinFurniture/Office chair/proform.jpg" alt="Product 9" />
-                            <span class="border site-btn btn-span">EXECUTIVE OFFICE</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/VinFurniture/Office chair/proform.jpg" alt="Product 9" />
+                                <div class="card-footer">
+                                    <p class="card-title">PROFORM</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/VinFurniture/Office chair/White-Deluxe.jpg" alt="Product 10" />
-                            <span class="border site-btn btn-span">WHITE DELUXE</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/VinFurniture/Office chair/White-Deluxe.jpg" alt="Product 10" />
+                                <div class="card-footer">
+                                    <p class="card-title">WHITE DELUXE</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="slider-btn">
@@ -193,74 +242,124 @@
                 </div>
             </div>
 
+            <!--Slider three-->
             <div class="row">
                 <div id="row-tittle" class="col-12">
                     <h4>Tango Company's products</h4>
                 </div>
             </div>
 
-            <!--Slider three-->
-            <div class="site-slider-three px-md-4">
+            <div class="site-slider-three px-0">
                 <div class="row slider-three text-center">
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Dining chair/Lotusville-Vintage.jpg" alt="Product 1" />
-                            <span class="border site-btn btn-span">LOTUSVILLE-VINTAGE</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Dining chair/Lotusville-Vintage.jpg" alt="Product 1" />
+                                <div class="card-footer">
+                                    <p class="card-title">LOTUSVILLE-VINTAGE</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Dining chair/Mountfair-Modern.jpg" alt="Product 2" />
-                            <span class="border site-btn btn-span">MOUNTFAIR MODERN</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Dining chair/Mountfair-Modern.jpg" alt="Product 2" />
+                                <div class="card-footer">
+                                    <p class="card-title">MOUNTFAIR MODERN</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Glider chair/Kempten-Casual.jpg" alt="Product 3" />
-                            <span class="border site-btn btn-span">KEMPTEN CASUAL</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Glider chair/Kempten-Casual.jpg" alt="Product 3" />
+                                <div class="card-footer">
+                                    <p class="card-title">KEMPTEN CASUAL</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Glider chair/Madison-Park.jpg" alt="Product 4" />
-                            <span class="border site-btn btn-span">MADISON PARK</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Glider chair/Madison-Park.jpg" alt="Product 4" />
+                                <div class="card-footer">
+                                    <p class="card-title">MADISON PARK</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5" />
-                            <span class="border site-btn btn-span">ESSENTIALS BLACK</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Office chair/Essentials-Black.jpg" alt="Product 5" />
+                                <div class="card-footer">
+                                    <p class="card-title">ESSENTIALS BLACK</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6" />
-                            <span class="border site-btn btn-span">EXECUTIVE OFFICE</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Office chair/Executive-Office.jpg" alt="Product 6" />
+                                <div class="card-footer">
+                                    <p class="card-title">EXECUTIVE OFFICE</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Rocking chair/Irvin-Birch.jpg" alt="Product 7" />
-                            <span class="border site-btn btn-span">IRVIN BIRCH</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Rocking chair/Irvin-Birch.jpg" alt="Product 7" />
+                                <div class="card-footer">
+                                    <p class="card-title">IRVIN BIRCH</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Rocking chair/Kloris-Tobacco.jpg" alt="Product 8" />
-                            <span class="border site-btn btn-span">KLORIS TOBACCO</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Rocking chair/Kloris-Tobacco.jpg" alt="Product 8" />
+                                <div class="card-footer">
+                                    <p class="card-title">KLORIS TOBACCO</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Sofa/monti.jpg" alt="Product 9" />
-                            <span class="border site-btn btn-span">MONTI</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Sofa/monti.jpg" alt="Product 9" />
+                                <div class="card-footer">
+                                    <p class="card-title">MONTI</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-2 product pt-4">
-                        <a href="Product-page/Product-page.html">
-                            <img src="images/Tango Company/Sofa/sellarius-long.jpg" alt="Product 10" />
-                            <span class="border site-btn btn-span">SELLARIUS LONG</span>
-                        </a>
+                        <div class="card">
+                            <a href="Product-page/Product-page.html">
+                                <img src="images/Tango Company/Sofa/sellarius-long.jpg" alt="Product 10" />
+                                <div class="card-footer">
+                                    <p class="card-title">SELLARIUS LONG</p>
+                                    <p class="card-text">$299.99</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="slider-btn">
