@@ -132,6 +132,16 @@ body {
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.205);
 }
 
+/*Choose your style*/
+.style-image img{
+    width: 100%;
+}
+
+.style-image p{
+    color: black;
+    text-align: center;
+}
+
 /*tittle*/
 
 #row-tittle {
