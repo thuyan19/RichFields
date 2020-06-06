@@ -22,7 +22,7 @@ window.onclick = function(event) {
     }
 };
 
-// xóa cart
+// Delete cart item
 var remove_cart = document.getElementsByClassName("btn-danger");
 for (var i = 0; i < remove_cart.length; i++) {
     var button = remove_cart[i];
@@ -43,16 +43,16 @@ function updatecart() {
         var quantity_item = cart_row.getElementsByClassName(
             "cart-quantity-input"
         )[0];
-        var price = parseFloat(price_item.innerText); // chuyển một chuổi string sang number để tính tổng tiền.
-        var quantity = quantity_item.value; // lấy giá trị trong thẻ input
+        var price = parseFloat(price_item.innerText); //Change string to number to get total.
+        var quantity = quantity_item.value; // Get value in <input>
         total = total + price * quantity;
     }
     document.getElementsByClassName("cart-total-price")[0].innerText =
-        total + "VNĐ";
-    // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
+        "$" + total;
+    //Change text = total in class cart-total-price. There's only one .cart-total-price so I use [0]
 }
 
-// thay đổi số lượng sản phẩm
+// Change quantity of item
 var quantity_input = document.getElementsByClassName("cart-quantity-input");
 for (var i = 0; i < quantity_input.length; i++) {
     var input = quantity_input[i];
@@ -65,7 +65,7 @@ for (var i = 0; i < quantity_input.length; i++) {
     });
 }
 
-// Thêm vào giỏ
+// Add to cart
 var add_cart = document.getElementsByClassName("btn-cart");
 for (var i = 0; i < add_cart.length; i++) {
     var add = add_cart[i];
@@ -77,9 +77,8 @@ for (var i = 0; i < add_cart.length; i++) {
             .innerText;
         var price = product.getElementsByClassName("price")[0].innerText;
         addItemToCart(title, price, img);
-        // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
+        // Show modal when user click "Add to cart" button
         modal.style.display = "block";
-
         updatecart();
     });
 }
@@ -104,7 +103,7 @@ function addItemToCart(title, price, img) {
   <span class="cart-price cart-column">${price}</span>
   <div class="cart-quantity cart-column">
       <input class="cart-quantity-input" type="number" value="1">
-      <button class="btn btn-danger" type="button">Xóa</button>
+      <button class="btn btn-danger" type="button">Remove</button>
   </div>`;
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
